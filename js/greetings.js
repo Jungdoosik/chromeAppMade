@@ -21,7 +21,6 @@ function paintGreeting(userName) {
 
 const savedUserName = localStorage.getItem(USERNAME_KEY);
 
-console.log(savedUserName);
 if (savedUserName === null) {
     loginForm.classList.remove(HIDDEN_CLASSNAME);
     loginForm.addEventListener("submit", onLoginSubmit);
